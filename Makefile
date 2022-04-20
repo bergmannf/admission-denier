@@ -4,9 +4,9 @@
 # @file
 # @version 0.1
 
-export NAMESPACE := admission
-export SERVICE := denier
-export IMAGE := admission-denier
+export NAMESPACE := openshift-admission
+export SERVICE := openshift-admission-hook
+export IMAGE := quay.io/fbergman/admission-denier:latest
 CERTS_DIR := "certs"
 
 predeploy:
