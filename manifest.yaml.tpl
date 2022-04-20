@@ -35,7 +35,7 @@ spec:
           image: ${IMAGE}
           imagePullPolicy: Always
           args:
-            - /app/admission-denier
+            - /app/admission-webhook
             - -alsologtostderr
             - --log_dir=/
             - -v=10
