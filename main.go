@@ -108,7 +108,7 @@ func (gs *DenierHandler) serve(w http.ResponseWriter, r *http.Request) {
 		Response: &v1beta1.AdmissionResponse{
 			Allowed: false,
 			Result: &metav1.Status{
-				Message: "Deployment of new applications is no longer permitted.",
+				Message: "The current cluster state does not permit new applications.",
 			},
 		},
 	}
